@@ -2,7 +2,7 @@
 //  ARBalloonsUITests.swift
 //  ARBalloonsUITests
 //
-//  Created by Marla Narazani on 29.08.17.
+//  Created by Marla Na on 29.08.17.
 //  Copyright © 2017 Marla Na. All rights reserved.
 //
 
