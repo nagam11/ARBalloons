@@ -56,10 +56,23 @@ class ViewController: UIViewController, ARSKViewDelegate {
     
     func view(_ view: ARSKView, nodeFor anchor: ARAnchor) -> SKNode? {
         // Create and configure a node for the anchor added to the view's session.
-        let labelNode = SKLabelNode(text: "🎈")
-        labelNode.horizontalAlignmentMode = .center
-        labelNode.verticalAlignmentMode = .center
-        return labelNode;
+        let spriteNode = SKSpriteNode(imageNamed: "balloon")
+        
+        let fadeOut = SKAction.fadeOut(withDuration: 2.6)
+        let fadeIn = SKAction.fadeIn(withDuration: 2.6)
+        let fade = SKAction.sequence([fadeOut, fadeIn])
+        let fadeForever = SKAction.repeatForever(fade)
+        
+        let pulseUp = SKAction.scale(to: 5.0, duration: 1.0)
+        let pulseDown = SKAction.scale(to: 3.0, duration: 1.0)
+        let pulse = SKAction.sequence([pulseUp, pulseDown])
+        let pulseForever = SKAction.repeatForever(pulse)
+        
+        //execute both actions simultaneously
+        let group = SKAction.group([fadeForever, pulseForever])
+        spriteNode.run(group)
+
+        return spriteNode;
     }
     
     func session(_ session: ARSession, didFailWithError error: Error) {

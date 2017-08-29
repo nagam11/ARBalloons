@@ -16,6 +16,7 @@
 		7A34E7481F54CF72000F7BCB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A34E7461F54CF72000F7BCB /* LaunchScreen.storyboard */; };
 		7A34E7531F54CF73000F7BCB /* ARBalloonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34E7521F54CF73000F7BCB /* ARBalloonsTests.swift */; };
 		7A34E75E1F54CF73000F7BCB /* ARBalloonsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A34E75D1F54CF73000F7BCB /* ARBalloonsUITests.swift */; };
+		7A34E76C1F54EB4E000F7BCB /* pop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A34E76B1F54EB4E000F7BCB /* pop.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7A34E7591F54CF73000F7BCB /* ARBalloonsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARBalloonsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A34E75D1F54CF73000F7BCB /* ARBalloonsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARBalloonsUITests.swift; sourceTree = "<group>"; };
 		7A34E75F1F54CF73000F7BCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A34E76B1F54EB4E000F7BCB /* pop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pop.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		7A34E7381F54CF72000F7BCB /* ARBalloons */ = {
 			isa = PBXGroup;
 			children = (
+				7A34E76B1F54EB4E000F7BCB /* pop.mp3 */,
 				7A34E7391F54CF72000F7BCB /* AppDelegate.swift */,
 				7A34E73B1F54CF72000F7BCB /* Scene.sks */,
 				7A34E73D1F54CF72000F7BCB /* Scene.swift */,
@@ -239,6 +242,7 @@
 				7A34E7481F54CF72000F7BCB /* LaunchScreen.storyboard in Resources */,
 				7A34E7451F54CF72000F7BCB /* Assets.xcassets in Resources */,
 				7A34E7431F54CF72000F7BCB /* Main.storyboard in Resources */,
+				7A34E76C1F54EB4E000F7BCB /* pop.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

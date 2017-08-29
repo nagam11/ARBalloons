@@ -10,6 +10,7 @@ import SpriteKit
 import ARKit
 
 class Scene: SKScene {
+    let popSound = SKAction.playSoundFileNamed("pop", waitForCompletion: false)
     
     override func didMove(to view: SKView) {
         // Setup your scene here
@@ -37,10 +38,11 @@ class Scene: SKScene {
             let moveLeftDown =  SKAction.move(to: CGPoint(x: node.position.x - 20, y: node.position.y - 140), duration: 0.3)
             let moveRightDown =  SKAction.move(to: CGPoint(x: node.position.x + 20, y: node.position.y - 140), duration: 0.3)
             let moveToBottom =  SKAction.move(to: CGPoint(x: node.position.x + 45, y: node.position.y - 220), duration: 0.3)
+            
             //make some balloons float to the left and some to the right when falling
             let moveDownFloating = ((arc4random() % 2)==0) ? moveLeftDown : moveRightDown
             
-            let sequence = SKAction.sequence([moveDown, moveDownFloating, moveToBottom])
+            let sequence = SKAction.sequence([popSound, moveDown, moveDownFloating, moveToBottom])
             let fadeOut = SKAction.fadeOut(withDuration: 1.0)
             let groupAction = SKAction.group([sequence,fadeOut])
             
